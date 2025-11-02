@@ -1,0 +1,30 @@
+{
+  "model_type": "KNeighborsRegressor",
+  "best_k": 9,
+  "lag_features": [
+    1,
+    2,
+    3
+  ],
+  "feature_columns": [
+    "NO2_lag_1",
+    "NO2_lag_2",
+    "NO2_lag_3"
+  ],
+  "training_samples": 312,
+  "test_samples": 79,
+  "performance_metrics": {
+    "mae_original": 6.985830773667442e-06,
+    "rmse_original": 1.6944587074999853e-05,
+    "mape_original": 29.66354203446614,
+    "r2_original": -0.11319074505262772,
+    "mae_ugm3": 0.321418073896439,
+    "rmse_ugm3": 0.7796204513207432
+  },
+  "conversion_factor": 46010,
+  "created_date": "2025-10-29 21:44:25",
+  "data_range": {
+    "start_date": "2020-06-01",
+    "end_date": "2021-06-30"
+  }
+}

@@ -1,7 +1,12 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
+try:
+    import joblib
+except ImportError:
+    st.error("❌ Modul 'joblib' tidak ditemukan!")
+    st.info("📋 Pastikan requirements.txt berisi 'joblib==1.3.2' dan redeploy aplikasi.")
+    st.stop()
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime, timedelta
